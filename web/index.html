@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 6 - JavaScript Basics</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 30px;">
+
+  <h1>JavaScript Basics: DOM Manipulation & Events</h1>
+  <hr>
+
+  <!-- Part 1: Introduction -->
+  <h2>Part 1 – Introduction to JavaScript</h2>
+
+  <p>Check the console for results of <b>console.log()</b> and variables.</p>
+
+  <hr>
+
+  <!-- Part 2: DOM Manipulation -->
+  <h2>Part 2 – DOM Manipulation</h2>
+
+  <h3>Task 2: Changing Content</h3>
+  <p id="text">This is the original text.</p>
+  <button onclick="changeText()">Change Text</button>
+
+  <h3>Task 3: Changing Styles</h3>
+  <div id="box" style="width: 200px; height: 100px; background-color: lightgray; text-align: center; padding-top: 30px;">
+    This is a box
+  </div>
+  <button onclick="changeColor()">Change Color</button>
+  <button onclick="changeFontSize()">Change Font Size</button>
+
+  <h3>Task 4: Creating & Removing Elements</h3>
+  <ul id="itemList">
+    <li>Item 1</li>
+  </ul>
+  <button onclick="addItem()">Add Item</button>
+  <button onclick="removeItem()">Remove Item</button>
+
+  <hr>
+
+  <!-- Part 3: Events -->
+  <h2>Part 3 – Events</h2>
+
+  <h3>Task 5: Mouse Events</h3>
+  <div id="hoverBox" 
+       style="width:100px; height:100px; background-color:red; margin-bottom:10px;">
+  </div>
+
+  <h3>Task 6: Keyboard Events</h3>
+  <input type="text" id="userInput" placeholder="Type something...">
+  <p id="displayText"></p>
+
+    <hr>
+
+  <h2>Task 7 – Form Validation (Optional)</h2>
+  <form id="contactForm">
+    <label for="formName">Name:</label><br>
+    <input type="text" id="formName"><br><br>
+
+    <label for="formEmail">Email:</label><br>
+    <input type="email" id="formEmail"><br><br>
+
+    <label for="formMessage">Message:</label><br>
+    <textarea id="formMessage" rows="3"></textarea><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="formFeedback" style="font-weight:bold; color: red;"></p>
+
+  <hr>
+
+<h2>Task 8 – Mini Project: Interactive To-Do List</h2>
+
+<div id="todoApp">
+  <input type="text" id="taskInput" placeholder="Enter a new task">
+  <button id="addTaskBtn">Add Task</button>
+
+  <ul id="taskList"></ul>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
